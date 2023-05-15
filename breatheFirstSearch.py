@@ -1,0 +1,43 @@
+#--------------Breathe First Search Algorithm--------------#
+
+visited=[]
+queue=[]
+
+def breatheFirstSearch(graph,bond): 
+    visited.append(bond)
+    queue.append(bond)
+    while(queue):
+        m=queue.pop(0)
+        print(m,end="->")
+        for adjacency in graph[m]:
+            if (adjacency not in visited):
+                visited.append(adjacency)
+                queue.append(adjacency)
+
+#----------------------------------------------------------#
+
+#Non-Directional Graph
+graph1={'5':['3','7'],
+       '3':['2','4','5'],
+       '7':['5','8'],
+       '2':['3'],
+       '4':['3','8'],
+       '8':['4','7']
+}#While defining adjacency, traversing order changes according to order of the graph elements.
+
+#Directional Graph 
+graph2={'5':['3','7'], 
+       '3':['2','4'],
+       '7':['8'],
+       '2':[],
+       '4':['8'],
+       '8':[]
+}#If adjacencys are not connected to each-other algorithm can't continue
+
+#----------------------------------------------------------#
+
+print("Non-directional graph BFS: ")
+breatheFirstSearch(graph1,'5')
+
+print("Directional graph BFS: ")
+breatheFirstSearch(graph2,'5')
