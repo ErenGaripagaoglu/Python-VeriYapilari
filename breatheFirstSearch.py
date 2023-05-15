@@ -1,6 +1,5 @@
 #--------------Breathe First Search Algorithm--------------#
 
-visited=[]
 queue=[]
 
 def breatheFirstSearch(graph,bond): 
@@ -34,10 +33,25 @@ graph2={'5':['3','7'],
        '8':[]
 }#If adjacencys are not connected to each-other algorithm can't continue
 
+graph3={'1':['2'],
+       '2':['3','1'],
+       '3':['4','2'],
+       '4':['5','3'],
+       '5':['6','4'],
+       '6':['7','5'],
+       '7':['6']
+}
+
 #----------------------------------------------------------#
 
+visited=[]
 print("Non-directional graph BFS: ")
 breatheFirstSearch(graph1,'5')
 
+visited=[]
 print("Directional graph BFS: ")
-breatheFirstSearch(graph2,'5')
+breatheFirstSearch(graph2,'2')
+
+visited=[]
+print("Directional graph BFS: ")
+breatheFirstSearch(graph3,'1')
