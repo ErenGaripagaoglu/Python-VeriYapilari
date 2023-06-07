@@ -1,8 +1,8 @@
-#--------------Breathe First Search Algorithm--------------#
+#--------------Breadth First Search Algorithm--------------#
 
 queue=[]
 
-def breatheFirstSearch(graph,bond): 
+def breadthFirstSearch(graph,bond): 
     visited.append(bond)
     queue.append(bond)
     while(queue):
@@ -46,12 +46,12 @@ graph3={'1':['2'],
 
 visited=[]
 print("Non-directional graph BFS: ")
-breatheFirstSearch(graph1,'5')
+breadthFirstSearch(graph1,'5')
 
 visited=[]
 print("Directional graph BFS: ")
-breatheFirstSearch(graph2,'2')
+breadthFirstSearch(graph2,'2')
 
 visited=[]
 print("Directional graph BFS: ")
-breatheFirstSearch(graph3,'1')
+breadthFirstSearch(graph3,'1')
