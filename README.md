@@ -5,6 +5,8 @@ Python veri yapıları ve algoritmaları hakkında kod notlarım.
 	<ol>
 		<li>Breadth First Search</li>
 		<li>Depth First Search</li>
+		<li>Binary Search</li>	
+		<li>Linear Search</li>	
 		<li>Selection Sort</li>	
 		<li>Insertion Sort</li>
 		<li>Bubble Sort</li>
@@ -24,6 +26,24 @@ Python veri yapıları ve algoritmaları hakkında kod notlarım.
 		<li>Bir başlangıç noktası belirlenir.</li>
 		<li>Komşuları tanımlanır.</li>
 		<li>Komşulardan en fazla derin bağa sahip olandan arama devam eder.</li>
+	</ul>
+	
+<h2>Binary Search</h2>
+	<ul>
+		<li>Böl ve fethet prensibi ile çalışır.</li>
+		<li>Dizinin sıralı olduğundan emin ol.</li>
+		<li>Arama yapılacak dizinin ortanca değerini bul.</li>
+		<li>Eğer aranan değer bulunduysa aramayı sonlandır.</li>
+		<li>Eğer kontrol edilen değer, aranandan büyükse aramayı dizinin küçük elemanlarında devam ettir.</li>
+		<li>Eğer kontrol edilen değer, aranandan küçükse aramayı dizinin büyük elemanlarında devam ettir.</li>
+		<li>Eğer kontrol edilen aralık 1 veya daha küçük ise aramayı bitir ve olumsuz sonuç döndür.</li>
+	</ul>
+	
+<h2>Linear Search</h2>
+	<ul>
+		<li>Aranacak eleman, listenin ilk indexinden itibaren aranmaya başlanır.</li>
+		<li>Aranan eleman listenin içinde var ise arama olumlu sonlanır.</li>
+		<li>Aranan eleman listenin içinde yok ise arama olumsuz sonuçlanır.</li>
 	</ul>
 	
 <h2>Selection Sort</h2>
