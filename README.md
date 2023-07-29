@@ -12,6 +12,8 @@ Python veri yapıları ve algoritmaları hakkında kod notlarım.
 		<li>Bubble Sort</li>
 		<li>Merge Sort</li>
 		<li>Quick Sort</li>
+		<li>Queues</li>
+		<li>Stacks</li>
 	</ol>
 
 <h2>Breadth First Search</h2>
@@ -81,7 +83,18 @@ Python veri yapıları ve algoritmaları hakkında kod notlarım.
 		<li>Binary Search gibi iki farklı pivot nokta ile çalışır.</li>
 		<li>Pivot arası karşılaştırmaya göre sıralama yapılır.</li>
 	</ul>
-	
+
+ <h2>Queues</h2>
+	<ul>
+		<li>FIFO, yani First In-First Out mantığı ile çalışır.</li>
+		<li>Index değeri en küçük olan eleman "front", en büyük olan eleman "rear" olarak tanımlanır.</li>
+	</ul>
+
+ <h2>Stacks</h2>
+	<ul>
+		<li>LIFO, yani Last In-First Out mantığı ile çalışır.</li>
+		<li>En üst katmandaki eleman "top" değer olarak tanımlanır.</li>
+	</ul>
 	
 	
 	
